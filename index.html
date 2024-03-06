@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>matelibre</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+     <link rel="stylesheet" href="./scss/style.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+          integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+          integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+     <div class="navbar-one "  id="MainNav">
+          <div class="navbar-body" id="navbody">
+               <div class="nav-logo">
+                    <a href="" id="navLogo">mate <br> <span>libre</span></a>
+               </div>
+               <div class="navbar-links">
+                    <div class="navbar-link-inner">
+                         <div class="navbar-part-one">
+                              <div class="navbar-part-one-inner-link-sec">
+                                   <ul>
+                                        <li><button class="a" onclick="InfoToggeler(this)">
+                                                  <div class="navbar-button">
+                                                       <div class="lines">
+                                                            <div class="bar1"></div>
+                                                            <div class="bar2"></div>
+                                                            <div class="bar3"></div>
+                                                       </div>
+                                                  </div>
+
+                                             </button></li>
+                                        <li>
+                                             <button href="" class="a " id="ChangeTxt">products
+                                                  <div class="nav-border"></div>
+                                             </button>
+
+                                        </li>
+                                        <li>
+                                             <button href="" class="a DropParent" id="ChangeTxt" onclick="NavExpander()">explore <i
+                                                       class="fa-solid fa-angle-down"></i>
+                                                  <div class="nav-border"></div>
+
+                                                 
+                                             </button>
+
+                                        </li>
+                                        <li>
+                                             <button href="" class="a  " id="ChangeTxt">community
+                                                  <div class="nav-border"></div>
+                                             </button>
+
+                                        </li>
+
+                                   </ul>
+
+                              </div>
+                         </div>
+                         <div class="navbar-part-two">
+                              <div class="navbar-part-two-inner-link">
+                                   <ul>
+                                        <li><button class="a  " id="ChangeTxt"> build your box</button></li>
+                                        <li>
+                                             <div class="d-flex gap-2">
+                                                  <button class="a">
+                                                       <div class="btn-nav" id="navBtn">
+                                                            <i class="fa-solid fa-user"></i>
+                                                       </div>
+                                                  </button>
+                                                  <button class="a">
+                                                       <div class="btn-nav" id="navBtn">
+                                                            <i class="fa-solid fa-cart-shopping"></i>
+                                                       </div>
+                                                  </button>
+                                             </div>
+                                        </li>
+
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div id="NavBarDropdown">
+                    <ul>
+                         <li>
+                              <a>
+                                   yerba mate
+
+                              </a>
+                         </li>
+                         <li>
+                              <a>
+                                   our story
+
+                              </a>
+                         </li>
+                         <li>
+                              <a>
+                                   fair trade
+
+                              </a>
+                         </li>
+                         <li>
+                              <a>
+                                   faq
+                              </a>
+                         </li>
+                    </ul>
+                   
+                    
+                  
+                  
+               </div>
+          </div>
+     </div>
+     <div class="information-page hidden" id="InfoPageNav">
+          <div class="inner-page">
+               <div class="part-one">
+                    <div class="main-text-part">
+                         <h1>
+                              product
+                         </h1>
+                         <button onclick="DropdownManu()">
+                              explore <i class="fa-solid fa-angle-down"></i>
+                              <div id="dropdown">
+                                   <a>
+                                        yerba mate
+
+                                   </a>
+                                   <a>
+                                        our story
+
+                                   </a>
+                                   <a>
+                                        fair trade
+
+                                   </a>
+                                   <a>
+                                        faq
+                                   </a>
+                              </div>
+                         </button>
+                         <h1>
+                              community
+                         </h1>
+                    </div>
+                    <div class="footer-text-sec">
+                         <div class="inner-section">
+                              <ul>
+
+                                   <li>
+                                        <a>
+
+
+                                             about us
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a>
+
+                                             retailers
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a>
+
+                                             wholesale
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a>
+
+                                             faq
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a>
+
+                                             contact
+                                        </a>
+                                   </li>
+                              </ul>
+                              <ul>
+                                   <li>
+                                        <a>
+                                             login
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a>
+                                             francais
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+               <div class="part-two">
+                    <div class="image-section">
+
+                    </div>
+                    <div class="card-section">
+                         <div class="inner-card">
+                              <h3>Subscribe and never <br> miss Mate Libre again</h3>
+                              <div class="div-btn">
+                                   <div class=" herobtn" id="BtnAnimation">
+                                        <button>
+                                             build your box
+                                        </button>
+                                   </div>
+                              </div>
+                             
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div id="main" data-scroll data-scroll-delay="1">
+          <div id="page1" data-scroll data-scroll-speed="-2">
+               <div class="main-hero-section">
+                    <div class="inner-section ">
+                         <div class="main-slider-section">
+                              <div class="collection-of-imges">
+                                   <div class="img-1">
+                                        <img src="https://matelibre.com/cdn/shop/files/hero-home-02.jpg?height=1028&v=1693497219&width=1920"
+                                             alt="" />
+                                   </div>
+                                   <div class="img-1">
+                                        <img src="https://matelibre.com/cdn/shop/files/hero-home-01.jpg?height=1028&v=1693497219&width=1920"
+                                             alt="" />
+                                   </div>
+                                   <div class="img-1">
+                                        <img src="https://matelibre.com/cdn/shop/files/hero-creativity.jpg?height=1028&v=1693511916&width=1920"
+                                             alt="" />
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="text-slider-section" data-scroll data-scroll-speed="-1">
+                              <div class="text">
+                                   <h1>
+                                        the ideal <br />
+                                        dose
+                                   </h1>
+                              </div>
+                              <div class="slider-txt">
+
+                                   <h1 ">of energy</h1>
+                                   <h1>of nature</h1>
+                                   <h1>of creativity</h1>
+                              </div>
+                              <div class=" herobtn">
+                                        <button>
+                                             build your box
+                                        </button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div id="page2" class="scroll " data-scroll data-scroll-speed="-5">
+               <div class="wrapper">
+                    <div class="text">
+                         <div class="title">
+                              <h1>Discover our</h1>
+                              <h1>most popular infusions </h1>
+                         </div>
+                    </div>
+                    <div class="project-wrapper">
+                         <div class="chair-p project">
+
+                              <div class="box" data-scroll data-scroll-delay="1">
+                                   <div class="inner-box orange-box">
+                                        <div class="main-title">
+                                             <h2>
+                                                  passion
+                                             </h2>
+                                             <button>
+                                                  new and improved recipe
+                                             </button>
+                                        </div>
+                                        <div class="respo-footer">
+                                             <div class="footre-nav">
+                                                  <div class="footer-img " data-scroll-speed="-5">
+                                                       <img src="https://matelibre.com/cdn/shop/files/matelibre-can-passion_3d360783-e47a-4235-bc35-ab260a9a362a.png?crop=region&crop_height=1700&crop_left=665&crop_top=188&crop_width=670&v=1693498842&width=200"
+                                                            alt="">
+                                                  </div>
+                                                  <div class="footre-text">
+                                                       <p>
+
+                                                            Exotic, rich, and dangerously fruity. A taste worthy of the
+                                                            local
+                                                            fruit markets of South America.
+
+                                                       </p>
+                                                  </div>
+                                                  <div class="animated-footer-btn">
+                                                       <button>
+                                                            <span data-scroll data-scroll-speed="-0.5">
+                                                                 discover
+                                                            </span>
+                                                            <i class="fa-solid fa-arrow-right"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="box" data-scroll data-scroll-delay="1">
+                                   <div class="inner-box green-box">
+                                        <div class="main-title">
+                                             <h2>
+                                                  mint & lime
+                                             </h2>
+
+                                        </div>
+                                        <div class="respo-footer">
+                                             <div class="footre-nav">
+                                                  <div class="footer-img">
+                                                       <img src="https://matelibre.com/cdn/shop/files/matelibre-can-menthe-lime_910b0663-93f8-40f2-b896-05345d5ad832.png?crop=region&crop_height=1700&crop_left=665&crop_top=188&crop_width=670&v=1693498850&width=200"
+                                                            alt="">
+                                                  </div>
+                                                  <div class="footre-text">
+                                                       <p>
+
+
+                                                            It's like happy hour in a can. Refreshing and fresh, perfect
+                                                            for a late day on the patio or a hot day by the pool.
+
+
+                                                       </p>
+                                                  </div>
+                                                  <div class="animated-footer-btn">
+                                                       <button>
+                                                            <span data-scroll data-scroll-speed="-0.5">
+                                                                 discover
+                                                            </span>
+                                                            <i class="fa-solid fa-arrow-right"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="box" data-scroll data-scroll-delay="1">
+                                   <div class="inner-box pink-box">
+                                        <div class="main-title">
+                                             <h2>
+                                                  rose & hibiscus
+                                             </h2>
+
+                                        </div>
+                                        <div class="respo-footer">
+                                             <div class="footre-nav">
+                                                  <div class="footer-img">
+                                                       <img src="https://matelibre.com/cdn/shop/files/matelibre-can-rose-hibiscus_c5a978db-9406-43d5-a6ec-aba23ce2b977.png?crop=region&crop_height=1700&crop_left=665&crop_top=188&crop_width=670&v=1693498834&width=200"
+                                                            alt="">
+                                                  </div>
+                                                  <div class="footre-text">
+                                                       <p>
+
+
+                                                            A softness and freshness reminiscent of rose petals. Each
+                                                            sip captivates you with its irresistible fragrance. A taste
+                                                            that transports you to 7th heaven.
+
+
+                                                       </p>
+                                                  </div>
+                                                  <div class="animated-footer-btn">
+                                                       <button>
+                                                            <span data-scroll data-scroll-speed="-0.5">
+                                                                 discover
+                                                            </span>
+                                                            <i class="fa-solid fa-arrow-right"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="box black-box" data-scroll data-scroll-delay="1">
+                                   <div class="inner-box ">
+                                        <div class="main-title">
+                                             <h2>
+                                                  See more products
+                                             </h2>
+
+                                        </div>
+                                        <div class="respo-footer">
+                                             <div class="footre-nav">
+
+                                                  <div class="animated-footer-btn">
+                                                       <button>
+                                                            <span data-scroll data-scroll-speed="-0.5">
+                                                                 discover
+                                                            </span>
+                                                            <i class="fa-solid fa-arrow-right"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="animated-text-scroll">
+                    <h1>
+                         Energy infusions
+                         <span>
+                              60 mg of caffeine
+                         </span>
+
+                         Awakens the mind
+                         <span> No crash
+                         </span>
+                         Energy infusions
+                         <span>
+                              60 mg of caffeine
+                         </span>
+
+                         Awakens the mind
+                         <span> No crash
+                         </span>
+                    </h1>
+
+               </div>
+          </div>
+          <div id="page3" class="thiredScroll" data-scroll="50%" data-scroll-speed="0.8">
+               <div class="saperatedText">
+                    <div class="txt1">
+                         <h2>
+                              the benefits of
+                         </h2>
+                    </div>
+                    <div class="txt2">
+                         <h2>
+                              yerba maté?
+                         </h2>
+                    </div>
+               </div>
+               <div class="scroll-card-section">
+                    <div class="card">
+                         <img src="https://cdn-icons-png.flaticon.com/512/6808/6808309.png" alt="" data-scroll="1">
+                         <h3>
+                              stimulates your mind
+
+                         </h3>
+                         <p>
+                              Put your brain in focus mode: yerba mate infusion can help stimulate brain activity thanks
+                              to the natural presence of polyphenols. The end of your sessions will be much more
+                              productive.
+                         </p>
+                    </div>
+                    <div class="card">
+                         <img src="https://cdn2.iconfinder.com/data/icons/picons-basic-3/57/basic3-154_infinity-512.png"
+                              alt="">
+                         <h3>
+                              no crash
+
+                         </h3>
+                         <p>
+                              Prolonged, better-controlled energy without palpitations thanks to yerba mate. The natural
+                              combination of caffeine and theobromine in yerba mate infusion helps regulate energy. Bye
+                              bye coffee down!
+
+
+                         </p>
+                    </div>
+                    <div class="card">
+                         <img src="https://cdn1.iconfinder.com/data/icons/coffee-and-tea-set-linear-outline/300/184747942Untitled-3-512.png"
+                              alt="">
+                         <h3>
+                              recovery
+
+                         </h3>
+                         <p>
+                              Whether it's for sport or after a night out, we've got you covered! Yerba mate enables you
+                              to recover 8.6% faster from physical exertion in the 24 hours following it, just when you
+                              need it most.
+
+
+                         </p>
+                    </div>
+               </div>
+               <div class="connectinTwoImg">
+                    <div class="cardsFlexSec">
+                         <div class="imgPartOne imgPart">
+                              <div class="innerbox">
+
+                              </div>
+                         </div>
+                         <div class="imgPartTwo imgPart">
+                              <div class="innerbox">
+
+                              </div>
+                         </div>
+
+                    </div>
+
+               </div>
+               <div class="respo-img">
+                    <img src="https://matelibre.com/cdn/shop/files/splash-yerba.jpg?height=1130&v=1693497255&width=2000"
+                         alt="">
+               </div>
+          </div>
+          <div id="page4">
+               <div class="inner-page-div">
+                    <div class="innreflex-section">
+                         <div class="image-part" data-scroll data-scroll-speed="-0.5">
+                              <img src="https://matelibre.com/cdn/shop/files/home-02.jpg?height=1200&v=1693578907&width=1200"
+                                   alt="">
+                         </div>
+                         <div class="tetx-part">
+                              <div class="div-inner">
+                                   <h1 data-scroll data-scroll-speed="0.5">
+                                        Committed from our raw material to packaging.
+                                   </h1>
+                                   <p>
+                                        We're not perfect, but we're committed to making an environmental and social
+                                        difference as best we can. From our carbon-neutral delivery to our plastic-free
+                                        packaging: Helping the most we can has never been more important.
+                                   </p>
+                                   <div class="our-info-sec">
+                                        <div class="info-line-one">
+                                             <div class="one">
+                                                  <img src="https://img.myloview.com/stickers/tea-plant-icon-outline-tea-plant-vector-icon-for-web-design-isolated-on-white-background-700-227965886.jpg"
+                                                       alt="">
+                                             </div>
+                                             <div class="second">
+                                                  <p>
+                                                       carbon-free delivery in greater montreal
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="info-line-one">
+                                             <div class="one">
+                                                  <img src="https://static.thenounproject.com/png/2997074-200.png"
+                                                       alt="">
+                                             </div>
+                                             <div class="second">
+                                                  <p>
+                                                       fair trade yerba mate
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="info-line-one">
+                                             <div class="one">
+                                                  <img src="https://cdn1.iconfinder.com/data/icons/coffee-and-tea-set-linear-outline/300/184747942Untitled-3-512.png"
+                                                       alt="">
+                                             </div>
+                                             <div class="second">
+                                                  <p>
+                                                       certified organic
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="info-line-one">
+                                             <div class="one">
+                                                  <img src="https://previews.123rf.com/images/jongjet303/jongjet3031703/jongjet303170300257/73540784-cancel-close-icon-outline-horseshoe-icon-for-website-design-logo.jpg"
+                                                       alt="">
+                                             </div>
+                                             <div class="second">
+                                                  <p>
+                                                       zero plastic in our packaging
+                                                  </p>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <button>
+                                        Discover our commitments
+                                   </button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div id="page5">
+               <div class="inner-main-div">
+                    <div class="main-img-sec">
+                         <div class="main-img">
+                              <img src="https://matelibre.com/cdn/shop/files/hero-home-03.jpg?height=960&v=1693497221&width=1500"
+                                   alt="">
+                         </div>
+                         <div class="context">
+                              <div class="inner">
+                                   <h2>
+                                        "
+                                   </h2>
+                                   <h3>Our vision extends beyond mere “Mate” sales. We aspire to give individuals the
+                                        energy to feel free. Through our mission, to support artists, athletes,
+                                        communities, and all who embody the essence of Canada’s DNA.
+                                   </h3>
+                                   <p>
+                                        Edouard
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div id="page6">
+               <div class="flex-section">
+                    <div class="inner-flex-sec">
+                         <div class="part-one">
+                              <div class="inner-cards-flex">
+                                   <div class="image-sec">
+                                        <img src="https://matelibre.com/cdn/shop/articles/DSC06452-3_1.jpg?v=1693578329"
+                                             alt="">
+                                   </div>
+                                   <div class="main-img-txt">
+                                        <h3>
+                                             Mate Mule
+                                        </h3>
+                                        <p>
+
+                                             september 1, 2023
+                                             -
+                                             recipes
+
+                                        </p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="part-two">
+                              <div class="title-bar">
+                                   <h2>
+                                        Our<br>
+                                        community
+                                   </h2>
+                                   <button class="title-bar-btn">
+                                        see all article
+                                   </button>
+                              </div>
+                              <div class="footer-bar-card-sec">
+                                   <div class="card-1">
+                                        <div class="card-inner-flex">
+                                             <div class="card-image-sec">
+                                                  <img src="https://matelibre.com/cdn/shop/articles/22-09_UqamDSC08848_1_1.jpg?v=1693579475"
+                                                       alt="">
+                                             </div>
+                                             <div class="text-sec">
+                                                  <h2>
+                                                       Strategies for Sustaining High Levels of Focus in School
+                                                  </h2>
+                                                  <p>
+                                                       august 29, 2023
+                                                  </p>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="card-1">
+                                        <div class="card-inner-flex">
+                                             <div class="card-image-sec">
+                                                  <img src="https://matelibre.com/cdn/shop/articles/PS_Super_Passion_DSC09118_1.jpg?v=1693508097"
+                                                       alt="">
+                                             </div>
+                                             <div class="text-sec">
+                                                  <h2>
+                                                       Super-Passion
+
+
+                                                  </h2>
+                                                  <p>
+                                                       july 27, 2023
+                                                       -
+                                                       recipes
+                                                  </p>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div id="page7">
+               <div class="inner-page-sec">
+                    <div class="frequently-asked-question">
+                         <div class="flex-part-one">
+                              <h2>
+                                   Frequently asked questions
+                              </h2>
+                              <button class="faq">
+                                   visit our faq
+                              </button>
+                         </div>
+                         <div class="flex-part-two">
+                              <div class="accordion accordion-flush" id="accordionFlushExample">
+                                   <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                             <button class="accordion-button collapsed" type="button"
+                                                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                  aria-expanded="false" aria-controls="flush-collapseOne">
+
+                                                  What is Yerba Mate?
+
+                                             </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                             data-bs-parent="#accordionFlushExample">
+                                             <div class="accordion-body">
+
+                                                  <p>
+                                                       Ilex paraguariensis, by its botanical name, or yerba maté, is a
+                                                       tree that grows in southern countries of South America, mainly
+                                                       Argentina, Brazil, Uruguay and Paraguay. Yerba Mate leaves are
+                                                       naturally caffeinated and picked and dried for consumption,
+                                                       traditionally infused in a calabash (small container), using the
+                                                       bombilla (filtering straw) and by adding hot water.
+
+                                                  </p>
+                                                  <p>
+                                                       Mate Libre uses these same leaves to offer a refreshing, tangy,
+                                                       floral, slightly sweet and energizing beverage. Learn more about
+                                                       <a href="">what is Yerba Mate</a>
+                                                  </p>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                             <button class="accordion-button collapsed" type="button"
+                                                  data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                  aria-expanded="false" aria-controls="flush-collapseTwo">
+
+                                                  What are the benefits of Yerba Mate?
+
+                                             </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                             data-bs-parent="#accordionFlushExample">
+                                             <div class="accordion-body">
+                                                  <ul>
+                                                       <li>
+                                                            <p>
+                                                                 Rich in antioxidants and nutrients
+                                                            </p>
+                                                       </li>
+                                                       <li>
+                                                            <p>
+                                                                 Can boost energy and increase mental alertness
+                                                            </p>
+                                                       </li>
+                                                       <li>
+                                                            <p>
+                                                                 Can help weight loss
+                                                            </p>
+                                                       </li>
+                                                       <li>
+                                                            <p>
+                                                                 Can increase bone density
+                                                            </p>
+                                                       </li>
+                                                       <li>
+                                                            <p>
+                                                                 Can help stimulate the immune system
+                                                            </p>
+                                                       </li>
+                                                       <li>
+                                                            <p>
+                                                                 Reduces blood sugar levels
+                                                            </p>
+                                                       </li>
+                                                       <li>
+                                                            <p>
+                                                                 May reduce your risk of heart disease
+                                                            </p>
+                                                       </li>
+                                                  </ul>
+                                                  <a href="">Read More About Yerba Mate Benefits</a>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                             <button class="accordion-button collapsed" type="button"
+                                                  data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                  aria-expanded="false" aria-controls="flush-collapseThree">
+
+                                                  Is it safe to drink Yerba Mate everyday?
+
+                                             </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                             data-bs-parent="#accordionFlushExample">
+                                             <div class="accordion-body">
+                                                  <p>
+                                                       Absolutely! Like coffee or tea, yerba mate is
+                                                       definitely safe to drink every day and locals in South
+                                                       America drink anywhere between 1-4 litres of a day.
+                                                       While we don’t recommend drinking THAT much (especially
+                                                       for those not used to drinking caffeine) feel free to
+                                                       incorporate yerba mate drinks into your daily routine!
+                                                  </p>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+          </div>
+          <div id="page8">
+               <div class="inner-section-div">
+                    <div class="flex-section-one">
+                         <div class="card-one">
+                              <div class="card-inner-section">
+                                   <div class="text">
+                                        <h4>
+                                             Subscribe to our newsletter and receive 10$ off your first subscription
+                                             order.
+                                        </h4>
+                                   </div>
+                                   <div class="newsletter">
+                                        <div class="inner">
+                                             <input type="email" placeholder="your email">
+                                             <button>
+                                                  <i class="fa-solid fa-arrow-right"></i>
+                                             </button>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="card-one">
+                              <div class="card-inner-2">
+
+                                   <div class="text">
+                                        <h4>
+                                             Follow us on our <br> social networks
+                                        </h4>
+
+                                   </div>
+                                   <div class="slocial">
+                                        <ul>
+                                             <li>
+                                                  <p>
+                                                       instagram
+
+                                                  </p>
+                                             </li>
+                                             <li>
+                                                  <p>
+                                                       facebook
+
+                                                  </p>
+                                             </li>
+                                             <li>
+                                                  <p>
+                                                       tiktok
+
+                                                  </p>
+                                             </li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="footer-sec">
+                         <div class="row-flex">
+                              <div class="row-col-1">
+                                   <div class="inner-sec">
+                                        <div class="ul-li-flex">
+                                             <ul>
+                                                  <li>
+                                                       <h2>
+                                                            products
+                                                       </h2>
+                                                  </li>
+                                                  <li>
+                                                       <h2>
+                                                            explore
+                                                       </h2>
+                                                  </li>
+                                                  <li>
+                                                       <h2>
+                                                            community
+                                                       </h2>
+                                                  </li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="row-col-1">
+                                   <div class="inner-sec">
+                                        <div class="ul-li-flex">
+                                             <ul>
+
+                                                  <li>
+                                                       <p>
+
+
+                                                            about us
+                                                       </p>
+                                                  </li>
+                                                  <li>
+                                                       <p>
+
+                                                            retailers
+                                                       </p>
+                                                  </li>
+                                                  <li>
+                                                       <p>
+
+                                                            wholesale
+                                                       </p>
+                                                  </li>
+                                                  <li>
+                                                       <p>
+
+                                                            faq
+                                                       </p>
+                                                  </li>
+                                                  <li>
+                                                       <p>
+
+                                                            contact
+                                                       </p>
+                                                  </li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="row-col-1">
+                                   <div class="inner-sec">
+                                        <ul>
+                                             <li>
+                                                  <p>
+                                                       login
+                                                  </p>
+                                             </li>
+                                             <li>
+                                                  <p>
+                                                       francais
+                                                  </p>
+                                             </li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+     </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+          integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+     </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+          integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js">
+     </script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+          integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+          integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://kit.fontawesome.com/962f48742e.js" crossorigin="anonymous"></script>
+
+
+
+
+     <script src="script.js"></script>
+</body>
+
+</html>
